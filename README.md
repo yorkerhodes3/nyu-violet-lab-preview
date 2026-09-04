@@ -5,6 +5,8 @@ An unofficial, independent design concept for a cross-NYU build weekend. The pre
 1. What would participation feel like?
 2. What kinds of projects could someone create, join, or advise?
 
+**[Open the live concept preview](https://yorkerhodes3.github.io/nyu-violet-lab-preview/)**
+
 ## Privacy and provenance
 
 - Every project, challenge, person, role, metric, date, and team shown in the site is synthetic.
