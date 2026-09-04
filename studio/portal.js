@@ -886,6 +886,13 @@ function projectDialogTemplate(project) {
       class="project-dialog-hero"
       style="--art-bg:${project.artBg};--art-accent:${project.artAccent};--art-ink:${project.artInk}"
     >
+      <img
+        class="project-dialog-hero__image"
+        src="../public/project-art/${encodeURIComponent(project.image)}"
+        alt=""
+        loading="eager"
+        decoding="async"
+      />
       <span class="card-status${statusClass}">${escapeHtml(project.status)}</span>
       <h2 id="portal-project-dialog-title">${escapeHtml(project.name)}</h2>
       <p>${escapeHtml(project.challenge)}</p>

@@ -765,6 +765,13 @@ function drawerMarkup(project) {
       class="drawer-hero"
       style="--art-bg: ${project.artBg}; --art-accent: ${project.artAccent}; --art-ink: ${project.artInk}"
     >
+      <img
+        class="drawer-hero__image"
+        src="./public/project-art/${encodeURIComponent(project.image)}"
+        alt=""
+        loading="eager"
+        decoding="async"
+      />
       <span class="project-status${statusClass}">${escapeHtml(project.status)}</span>
       <h2 id="drawer-title">${escapeHtml(project.name)}</h2>
       <p>${escapeHtml(project.challenge)}</p>

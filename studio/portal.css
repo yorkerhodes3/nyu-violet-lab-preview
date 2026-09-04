@@ -2438,30 +2438,30 @@ svg {
   justify-content: flex-end;
 }
 
+.project-dialog-hero__image {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .project-dialog-hero::before {
   position: absolute;
+  z-index: 1;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 28px 28px;
+  background: linear-gradient(180deg, rgba(20, 8, 28, 0.04) 20%, rgba(20, 8, 28, 0.86));
   content: "";
 }
 
 .project-dialog-hero::after {
-  position: absolute;
-  top: -90px;
-  right: -70px;
-  width: 250px;
-  height: 250px;
-  border: 44px solid var(--art-accent);
-  border-radius: 50%;
-  content: "";
+  content: none;
 }
 
-.project-dialog-hero > * {
+.project-dialog-hero > :not(.project-dialog-hero__image) {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .project-dialog-hero .card-status {
