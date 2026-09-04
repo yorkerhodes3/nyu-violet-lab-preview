@@ -24,6 +24,7 @@ const svg = (path, className = "") =>
 const projects = [
   {
     id: "first-week",
+    image: "first-week.svg",
     name: "First Week, Less Guesswork",
     short: "FW",
     pitch:
@@ -58,6 +59,7 @@ const projects = [
   },
   {
     id: "open-stage",
+    image: "open-stage.svg",
     name: "OpenStage Caption Kit",
     short: "CC",
     pitch:
@@ -67,8 +69,8 @@ const projects = [
     challenge: "Learning Without Friction",
     challengeId: "learning",
     status: "Open to join",
-    commitment: "Weekend",
-    commitmentLabel: "Full build weekend",
+    commitment: "Two-day",
+    commitmentLabel: "Both event days",
     experience: ["First-timer friendly"],
     schools: ["Tisch", "Arts & Science", "NYU IT"],
     tags: ["arts", "accessibility", "creative tools"],
@@ -91,6 +93,7 @@ const projects = [
   },
   {
     id: "carbon-lens",
+    image: "carbon-lens.svg",
     name: "CarbonLens for Campus Events",
     short: "CO₂",
     pitch:
@@ -100,8 +103,8 @@ const projects = [
     challenge: "Climate-Ready University",
     challengeId: "climate",
     status: "Needs an advisor",
-    commitment: "Weekend",
-    commitmentLabel: "Full build weekend",
+    commitment: "Two-day",
+    commitmentLabel: "Both event days",
     experience: ["First-timer friendly"],
     schools: ["Stern", "Wagner", "Campus Services"],
     tags: ["climate", "operations", "data visualization"],
@@ -124,17 +127,18 @@ const projects = [
   },
   {
     id: "lab-link",
+    image: "lab-link.svg",
     name: "LabLink Commons",
     short: "LL",
     pitch:
       "A discovery layer for finding underused research tools, methods, and expertise across school boundaries.",
     description:
-      "Explore how researchers could discover capabilities—not sensitive data—in neighboring labs. The weekend outcome is a searchable service concept with trust, access, and maintenance built into the flow.",
+      "Explore how researchers could discover capabilities—not sensitive data—in neighboring labs. The two-day outcome is a searchable service concept with trust, access, and maintenance built into the flow.",
     challenge: "Discovery to Impact",
     challengeId: "discovery",
     status: "Open to join",
-    commitment: "Weekend",
-    commitmentLabel: "Full build weekend",
+    commitment: "Two-day",
+    commitmentLabel: "Both event days",
     experience: ["First-timer friendly"],
     schools: ["Tandon", "Arts & Science", "Research Staff"],
     tags: ["research", "knowledge graph", "operations"],
@@ -157,6 +161,7 @@ const projects = [
   },
   {
     id: "studio-swap",
+    image: "studio-swap.svg",
     name: "StudioSwap",
     short: "SS",
     pitch:
@@ -189,6 +194,7 @@ const projects = [
   },
   {
     id: "city-pulse",
+    image: "city-pulse.svg",
     name: "CityPulse Classroom",
     short: "NYC",
     pitch:
@@ -198,8 +204,8 @@ const projects = [
     challenge: "Public Interest AI",
     challengeId: "public-ai",
     status: "Open to join",
-    commitment: "Weekend",
-    commitmentLabel: "Full build weekend",
+    commitment: "Two-day",
+    commitmentLabel: "Both event days",
     experience: ["First-timer friendly"],
     schools: ["Wagner", "Tandon", "Journalism"],
     tags: ["AI", "public data", "education"],
@@ -222,6 +228,7 @@ const projects = [
   },
   {
     id: "care-route",
+    image: "care-route.svg",
     name: "CareRoute",
     short: "+",
     pitch:
@@ -255,6 +262,7 @@ const projects = [
   },
   {
     id: "global-relay",
+    image: "global-relay.svg",
     name: "Global Classroom Relay",
     short: "24h",
     pitch:
@@ -287,6 +295,7 @@ const projects = [
   },
   {
     id: "civic-signals",
+    image: "civic-signals.svg",
     name: "Civic Signals Studio",
     short: "§",
     pitch:
@@ -296,8 +305,8 @@ const projects = [
     challenge: "Public Interest AI",
     challengeId: "public-ai",
     status: "Open to join",
-    commitment: "Weekend",
-    commitmentLabel: "Full build weekend",
+    commitment: "Two-day",
+    commitmentLabel: "Both event days",
     experience: ["No code needed"],
     schools: ["NYU Law", "Wagner", "Arts & Science"],
     tags: ["AI", "civic life", "policy"],
@@ -320,6 +329,7 @@ const projects = [
   },
   {
     id: "access-after-dark",
+    image: "access-after-dark.svg",
     name: "Access After Dark",
     short: "8PM",
     pitch:
@@ -352,6 +362,7 @@ const projects = [
   },
   {
     id: "data-dignity",
+    image: "data-dignity.svg",
     name: "Data Dignity Kit",
     short: "✓",
     pitch:
@@ -384,6 +395,7 @@ const projects = [
   },
   {
     id: "quiet-commons",
+    image: "quiet-commons.svg",
     name: "Quiet Commons",
     short: "••",
     pitch:
@@ -393,8 +405,8 @@ const projects = [
     challenge: "Healthy Campus Commons",
     challengeId: "health",
     status: "Open to join",
-    commitment: "Weekend",
-    commitmentLabel: "Full build weekend",
+    commitment: "Two-day",
+    commitmentLabel: "Both event days",
     experience: ["First-timer friendly"],
     schools: ["Gallatin", "Steinhardt", "NYU Libraries"],
     tags: ["wellness", "accessibility", "mapping"],
@@ -557,6 +569,13 @@ function projectCard(project, index) {
         class="project-card__art"
         style="--art-bg: ${project.artBg}; --art-accent: ${project.artAccent}; --art-ink: ${project.artInk}"
       >
+        <img
+          class="project-card__art-image"
+          src="./public/project-art/${encodeURIComponent(project.image)}"
+          alt=""
+          loading="eager"
+          decoding="async"
+        />
         <span class="project-card__art-symbol">
           ${escapeHtml(project.short)}
           <small>${escapeHtml(project.challenge)}</small>
@@ -758,7 +777,7 @@ function drawerMarkup(project) {
           .join("")}
       </div>
       <section class="drawer-section">
-        <h3>The weekend-sized outcome</h3>
+        <h3>The two-day outcome</h3>
         <dl class="drawer-facts">
           <div><dt>Prototype</dt><dd>${escapeHtml(project.outcome)}</dd></div>
           <div><dt>Current stage</dt><dd>${escapeHtml(project.stage)}</dd></div>
@@ -880,7 +899,7 @@ function handleMatchmaker(event) {
   result.innerHTML = `
     <span class="match-result__label">Suggested starting point</span>
     <h3>${escapeHtml(roleCopy[intent])}</h3>
-    <p>Try <strong>${escapeHtml(project.name)}</strong>. Its team mix and weekend outcome are a good fit for the interests you selected.</p>
+    <p>Try <strong>${escapeHtml(project.name)}</strong>. Its team mix and two-day outcome are a good fit for the interests you selected.</p>
     <button class="button button--primary match-project-button" type="button" data-project-id="${project.id}">
       Explore this demo project
       ${svg(iconPaths.arrow)}

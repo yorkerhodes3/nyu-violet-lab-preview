@@ -146,7 +146,7 @@ const ideas = [
   },
   {
     title: "Prototype Aftercare",
-    description: "A close-out checklist for documenting, archiving, and responsibly retiring weekend experiments.",
+    description: "A close-out checklist for documenting, archiving, and responsibly retiring short build experiments.",
     theme: "Practice",
     responses: 5,
   },
@@ -227,11 +227,11 @@ function overviewTemplate() {
         <div class="event-hero__content">
           <span class="event-date">
             ${svg(iconPaths.calendar)}
-            Preview dates: April 9–11, 2027
+            Monday–Tuesday · September 14–15, 2026 · 9:00 AM–5:00 PM
           </span>
-          <h1>NYU University<br />Hackathon Preview 2027</h1>
+          <h1>NYU University<br />Hackathon Preview 2026</h1>
           <p class="event-hero__subtitle">
-            One collaborative weekend for students, faculty, and staff across every NYU school and global site.
+            Two focused daytime sessions for students, faculty, and staff across every NYU school and global site.
           </p>
           <div class="event-hero__actions">
             <button class="portal-button portal-button--registered" type="button" data-demo-action="registration">
@@ -269,7 +269,7 @@ function overviewTemplate() {
               <article class="quick-start-card">
                 <span class="quick-start-card__icon">${svg(iconPaths.document)}</span>
                 <h3>Browse projects</h3>
-                <p>See the kinds of teams, skills, and weekend outcomes represented.</p>
+                <p>See the kinds of teams, skills, and two-day outcomes represented.</p>
                 <button type="button" data-navigate="projects">Explore projects ${svg(iconPaths.arrow)}</button>
               </article>
               <article class="quick-start-card">
@@ -362,6 +362,13 @@ function projectCard(project, index) {
         class="portal-project-card__art"
         style="--art-bg:${project.artBg};--art-accent:${project.artAccent};--art-ink:${project.artInk}"
       >
+        <img
+          class="portal-project-card__image"
+          src="../public/project-art/${encodeURIComponent(project.image)}"
+          alt=""
+          loading="eager"
+          decoding="async"
+        />
         <span class="portal-project-card__symbol">
           ${escapeHtml(project.short)}
           <small>${escapeHtml(project.challenge)}</small>
@@ -419,7 +426,7 @@ function projectsTemplate() {
     <div class="view-container">
       ${pageHeading(
         `Projects (${projects.length})`,
-        "Projects are the primary unit of hacking activity. Open a project to see its fictional team, scope, roles, and weekend outcome.",
+        "Projects are the primary unit of hacking activity. Open a project to see its fictional team, scope, roles, and two-day outcome.",
       )}
       <div class="project-tools">
         <div class="portal-search-row">
@@ -576,7 +583,7 @@ function participateTemplate() {
           <section class="article-section">
             <h2>3. Build in small loops</h2>
             <p>
-              Frame the problem on Friday, prototype and test on Saturday, then share the signal on Sunday:
+              Frame the problem and begin building on Monday, then test, refine, and share the signal on Tuesday:
               what changed, what you learned, and the next smallest step worth taking.
             </p>
           </section>
@@ -593,7 +600,7 @@ function participateTemplate() {
           <dl>
             <div><dt>Who</dt><dd>Students, faculty, and staff in this concept</dd></div>
             <div><dt>Where</dt><dd>Hybrid across NYU campuses and global sites</dd></div>
-            <div><dt>Time</dt><dd>A few focused hours or the full weekend</dd></div>
+            <div><dt>Time</dt><dd>A few focused hours or both event days</dd></div>
             <div><dt>Deliverable</dt><dd>A testable prototype and a short learning story</dd></div>
           </dl>
         </aside>
@@ -627,7 +634,7 @@ function rulesTemplate() {
               <li>A project can be technical, creative, operational, research-oriented, or service-focused.</li>
               <li>Teams can start with a new idea or advance an existing, appropriately shareable concept.</li>
               <li>Participants may contribute to more than one project if expectations are clear.</li>
-              <li>Every project identifies one weekend-sized outcome and a realistic next step.</li>
+              <li>Every project identifies one focused two-day outcome and a realistic next step.</li>
             </ul>
           </section>
           <section class="article-section">
@@ -652,32 +659,68 @@ function rulesTemplate() {
 }
 
 function scheduleTemplate() {
-  const schedule = [
-    ["Fri · 5:00 PM", "Welcome + team formation", "Meet people, confirm roles, and choose one specific weekend outcome."],
-    ["Fri · 7:00 PM", "Problem framing studio", "Turn assumptions into questions and agree on who the project is for."],
-    ["Sat · 9:00 AM", "Build rooms open", "Prototype in short loops with studios, makers, and advisors available."],
-    ["Sat · 1:00 PM", "Practice and responsibility clinics", "Optional sessions on access, research, data, safety, and implementation."],
-    ["Sat · 6:00 PM", "Cross-team test exchange", "Trade prototypes with another team and capture the most useful surprise."],
-    ["Sun · 10:00 AM", "Story and demo studio", "Shape a two-minute explanation of the problem, prototype, learning, and next step."],
-    ["Sun · 2:00 PM", "Community showcase", "Share work in themed galleries with peers, reviewers, and potential next-step partners."],
+  const days = [
+    {
+      label: "Day 1",
+      date: "Monday, September 14",
+      hours: "9:00 AM–5:00 PM",
+      events: [
+        ["9:00 AM", "Welcome + team formation", "Meet people, confirm roles, and choose one specific two-day outcome."],
+        ["10:00 AM", "Problem framing studio", "Turn assumptions into questions and agree on who the project is for."],
+        ["11:00 AM", "Build rooms open", "Prototype in short loops with studios, makers, and advisors available."],
+        ["12:30 PM", "Lunch + skill shares", "Optional peer-led sessions make useful practices easy to exchange."],
+        ["2:00 PM", "Practice and responsibility clinics", "Focused help with access, research, data, safety, and implementation."],
+        ["4:15–5:00 PM", "Day-one checkpoint", "Name the strongest signal, the biggest unknown, and Tuesday’s first test."],
+      ],
+    },
+    {
+      label: "Day 2",
+      date: "Tuesday, September 15",
+      hours: "9:00 AM–5:00 PM",
+      events: [
+        ["9:00 AM", "Build rooms reopen", "Reconnect around the day-one checkpoint and continue the highest-value work."],
+        ["11:00 AM", "Cross-team test exchange", "Trade prototypes with another team and capture the most useful surprise."],
+        ["12:30 PM", "Lunch + open advising", "Use optional office hours or protect the time for focused team work."],
+        ["1:30 PM", "Story and demo studio", "Shape a two-minute explanation of the problem, prototype, learning, and next step."],
+        ["3:00 PM", "Community showcase", "Share work in themed galleries with peers, reviewers, and potential next-step partners."],
+        ["4:30–5:00 PM", "Closing + next steps", "Document ownership, follow-up questions, and the next smallest responsible action."],
+      ],
+    },
   ];
   return `
     <div class="view-container">
       ${pageHeading(
-        "Illustrative Schedule",
-        "A sample weekend rhythm designed to protect build time while offering optional moments for support and cross-team learning.",
+        "September 14–15 Schedule",
+        "Two daytime sessions, Monday and Tuesday from 9:00 AM to 5:00 PM, with protected build time and optional moments for support.",
       )}
-      <div class="schedule-list">
-        ${schedule
+      <div class="schedule-days">
+        ${days
           .map(
-            ([time, title, description]) => `
-              <article class="schedule-item">
-                <time>${escapeHtml(time)}</time>
-                <div class="schedule-item__content">
-                  <h2>${escapeHtml(title)}</h2>
-                  <p>${escapeHtml(description)}</p>
+            (day) => `
+              <section class="schedule-day">
+                <header class="schedule-day__header">
+                  <span>${escapeHtml(day.label)}</span>
+                  <div>
+                    <h2>${escapeHtml(day.date)}</h2>
+                    <p>${escapeHtml(day.hours)}</p>
+                  </div>
+                </header>
+                <div class="schedule-list">
+                  ${day.events
+                    .map(
+                      ([time, title, description]) => `
+                        <article class="schedule-item">
+                          <time>${escapeHtml(time)}</time>
+                          <div class="schedule-item__content">
+                            <h3>${escapeHtml(title)}</h3>
+                            <p>${escapeHtml(description)}</p>
+                          </div>
+                        </article>
+                      `,
+                    )
+                    .join("")}
                 </div>
-              </article>
+              </section>
             `,
           )
           .join("")}
@@ -691,7 +734,7 @@ function ideasTemplate() {
     <div class="view-container">
       ${pageHeading(
         `Ideas (${ideas.length})`,
-        "Ideas are short, fictional sparks that another participant could pick up, combine, or turn into a weekend project.",
+        "Ideas are short, fictional sparks that another participant could pick up, combine, or turn into a two-day project.",
       )}
       <div class="idea-grid">
         ${ideas
@@ -738,7 +781,7 @@ function peopleTemplate(advisorsOnly = false) {
       ${pageHeading(
         advisorsOnly ? "Advisors" : "Hackers",
         advisorsOnly
-          ? "Fictional examples of focused expertise that teams might request during the weekend."
+          ? "Fictional examples of focused expertise that teams might request during the two-day event."
           : "A synthetic directory showing how people from different schools and roles could discover one another.",
       )}
       <div class="people-grid">
@@ -850,7 +893,7 @@ function projectDialogTemplate(project) {
     <div class="project-dialog-body">
       <p class="project-dialog-lede">${escapeHtml(project.description)}</p>
       <dl class="project-facts">
-        <div><dt>Weekend outcome</dt><dd>${escapeHtml(project.outcome)}</dd></div>
+        <div><dt>Two-day outcome</dt><dd>${escapeHtml(project.outcome)}</dd></div>
         <div><dt>Current stage</dt><dd>${escapeHtml(project.stage)}</dd></div>
         <div><dt>Commitment</dt><dd>${escapeHtml(project.commitmentLabel)}</dd></div>
         <div><dt>Participation</dt><dd>${escapeHtml(project.mode)}</dd></div>

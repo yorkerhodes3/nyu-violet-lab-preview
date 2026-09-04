@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">StudioSwap illustration</title>
+  <desc id="desc">Creative tools moving between two colorful studio spaces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#631448"/>
+      <stop offset="1" stop-color="#b74672"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#31051f" flood-opacity=".4"/>
+    </filter>
+  </defs>
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="518" cy="78" r="128" fill="#ffc857" opacity=".18"/>
+  <path d="M0 253c120-30 215-18 312 22 106 43 211 34 328-12v57H0z" fill="#ffcd72" opacity=".42"/>
+  <g filter="url(#shadow)">
+    <rect x="64" y="60" width="214" height="190" rx="12" fill="#fff"/>
+    <rect x="362" y="60" width="214" height="190" rx="12" fill="#fff"/>
+    <rect x="84" y="86" width="174" height="10" rx="5" fill="#eadde5"/>
+    <rect x="84" y="135" width="174" height="10" rx="5" fill="#eadde5"/>
+    <rect x="84" y="184" width="174" height="10" rx="5" fill="#eadde5"/>
+    <rect x="382" y="86" width="174" height="10" rx="5" fill="#eadde5"/>
+    <rect x="382" y="135" width="174" height="10" rx="5" fill="#eadde5"/>
+    <rect x="382" y="184" width="174" height="10" rx="5" fill="#eadde5"/>
+  </g>
+  <g>
+    <circle cx="112" cy="117" r="15" fill="#5c2d91"/>
+    <circle cx="155" cy="117" r="15" fill="#ff8066"/>
+    <path d="M207 105h28v24h-28z" fill="#315f9f"/>
+    <path d="m104 151 20 30H84z" fill="#ffc857"/>
+    <rect x="145" y="153" width="41" height="26" rx="5" fill="#a9efd8"/>
+    <path d="M211 153h30v27h-30z" fill="#d2a7e8"/>
+    <rect x="94" y="204" width="43" height="26" rx="3" fill="#315f9f"/>
+    <circle cx="174" cy="217" r="15" fill="#ffc857"/>
+    <path d="M216 204h28v27h-28z" fill="#ff8066"/>
+  </g>
+  <g>
+    <rect x="393" y="103" width="40" height="26" rx="4" fill="#a9efd8"/>
+    <circle cx="472" cy="116" r="15" fill="#ffc857"/>
+    <path d="M516 102h28v27h-28z" fill="#5c2d91"/>
+    <circle cx="408" cy="166" r="15" fill="#ff8066"/>
+    <path d="m465 151 20 30h-40z" fill="#315f9f"/>
+    <rect x="505" y="153" width="39" height="27" rx="4" fill="#d2a7e8"/>
+    <path d="M394 204h28v27h-28z" fill="#5c2d91"/>
+    <rect x="447" y="203" width="43" height="27" rx="4" fill="#a9efd8"/>
+    <circle cx="527" cy="217" r="15" fill="#315f9f"/>
+  </g>
+  <path d="M283 124h74" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+  <path d="m340 107 20 17-20 17" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M357 194h-74" fill="none" stroke="#d7ff52" stroke-width="9" stroke-linecap="round"/>
+  <path d="m300 177-20 17 20 17" fill="none" stroke="#d7ff52" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">First Week, Less Guesswork illustration</title>
+  <desc id="desc">A stylized campus route connecting helpful places and people.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#24103f"/>
+      <stop offset="1" stop-color="#6042a3"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#eee7f7"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#12031e" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <g opacity=".12" stroke="#fff">
+    <path d="M0 54h640M0 108h640M0 162h640M0 216h640M0 270h640"/>
+    <path d="M64 0v320M128 0v320M192 0v320M256 0v320M320 0v320M384 0v320M448 0v320M512 0v320M576 0v320"/>
+  </g>
+  <path d="M-20 276C115 185 167 271 273 163S451 76 665 38" fill="none" stroke="#d7ff52" stroke-width="15" stroke-linecap="round"/>
+  <path d="M-20 276C115 185 167 271 273 163S451 76 665 38" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-dasharray="8 11"/>
+  <g filter="url(#shadow)">
+    <rect x="375" y="42" width="176" height="238" rx="23" fill="url(#phone)"/>
+    <rect x="389" y="61" width="148" height="181" rx="13" fill="#e6eef8"/>
+    <path d="M401 210c31-57 45-29 67-77 14-30 36-24 58-48" fill="none" stroke="#5c2d91" stroke-width="7" stroke-linecap="round"/>
+    <g fill="#ff8066" stroke="#fff" stroke-width="5">
+      <circle cx="402" cy="210" r="10"/>
+      <circle cx="468" cy="133" r="10"/>
+      <circle cx="526" cy="85" r="10"/>
+    </g>
+    <rect x="430" y="256" width="67" height="7" rx="4" fill="#c2b5cc"/>
+  </g>
+  <g fill="#fff">
+    <path d="M58 111 116 77l58 34v82H58z" opacity=".95"/>
+    <rect x="83" y="139" width="20" height="54" fill="#4f3182"/>
+    <rect x="127" y="128" width="22" height="20" fill="#4f3182"/>
+    <path d="M178 211h105v52H178z" opacity=".78"/>
+    <path d="m167 211 64-42 64 42z" opacity=".9"/>
+    <rect x="216" y="225" width="28" height="38" fill="#4f3182"/>
+  </g>
+  <g transform="translate(72 213)">
+    <circle cx="21" cy="14" r="13" fill="#ffc857"/>
+    <path d="M2 72c2-30 9-44 19-44s18 14 20 44" fill="#ffc857"/>
+    <circle cx="70" cy="23" r="11" fill="#a9efd8"/>
+    <path d="M54 72c2-25 7-37 16-37s15 12 17 37" fill="#a9efd8"/>
+  </g>
+  <g transform="translate(293 66)">
+    <circle r="28" fill="#fff" fill-opacity=".16"/>
+    <path d="m-10 0 7 7 14-17" fill="none" stroke="#d7ff52" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

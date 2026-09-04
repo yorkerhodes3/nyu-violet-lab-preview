@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Data Dignity Kit illustration</title>
+  <desc id="desc">A privacy shield protecting a small set of responsibly selected data cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#26164f"/>
+      <stop offset="1" stop-color="#6150a4"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#dfe4ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="11" flood-color="#100825" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <g opacity=".13" fill="#fff">
+    <circle cx="75" cy="67" r="8"/><circle cx="135" cy="43" r="5"/><circle cx="554" cy="78" r="9"/>
+    <circle cx="593" cy="141" r="5"/><circle cx="92" cy="256" r="7"/><circle cx="523" cy="266" r="6"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="60" y="77" width="180" height="59" rx="10" fill="#fff"/>
+    <circle cx="88" cy="106" r="13" fill="#ffb3a4"/>
+    <rect x="112" y="94" width="101" height="8" rx="4" fill="#6a6480"/>
+    <rect x="112" y="113" width="68" height="6" rx="3" fill="#b5afc4"/>
+    <rect x="400" y="54" width="180" height="59" rx="10" fill="#fff"/>
+    <circle cx="428" cy="83" r="13" fill="#ffc857"/>
+    <rect x="452" y="71" width="101" height="8" rx="4" fill="#6a6480"/>
+    <rect x="452" y="90" width="68" height="6" rx="3" fill="#b5afc4"/>
+    <rect x="423" y="201" width="158" height="59" rx="10" fill="#fff"/>
+    <circle cx="451" cy="230" r="13" fill="#a9efd8"/>
+    <rect x="475" y="218" width="81" height="8" rx="4" fill="#6a6480"/>
+    <rect x="475" y="237" width="58" height="6" rx="3" fill="#b5afc4"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M320 43c47 32 89 43 125 44v79c0 64-43 104-125 137-82-33-125-73-125-137V87c36-1 78-12 125-44Z" fill="url(#shield)"/>
+    <path d="M320 68c35 23 67 32 95 34v61c0 46-31 78-95 107-64-29-95-61-95-107v-61c28-2 60-11 95-34Z" fill="#5c2d91"/>
+    <rect x="279" y="145" width="82" height="67" rx="10" fill="#d7ff52"/>
+    <path d="M294 145v-15a26 26 0 0 1 52 0v15" fill="none" stroke="#d7ff52" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="320" cy="175" r="8" fill="#3b155c"/>
+    <path d="M320 180v15" stroke="#3b155c" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke="#a9efd8" stroke-width="4" stroke-dasharray="5 6">
+    <path d="M240 106h50M400 83h-50M423 230h-60"/>
+  </g>
+</svg>

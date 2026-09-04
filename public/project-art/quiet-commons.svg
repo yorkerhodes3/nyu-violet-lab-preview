@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Quiet Commons illustration</title>
+  <desc id="desc">A calm library map showing quieter and more social zones.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#203b42"/>
+      <stop offset="1" stop-color="#47727a"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="11" stdDeviation="11" flood-color="#0b2227" flood-opacity=".4"/>
+    </filter>
+  </defs>
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <circle cx="545" cy="62" r="135" fill="#bfc8ff" opacity=".13"/>
+  <g filter="url(#shadow)">
+    <path d="M75 55h398c25 0 44 19 44 44v170H119c-25 0-44-19-44-44z" fill="#fff"/>
+    <path d="M102 80h144v77H102z" fill="#dff5ee"/>
+    <path d="M260 80h111v77H260z" fill="#e8ebff"/>
+    <path d="M385 80h105v77H385z" fill="#fff1cf"/>
+    <path d="M102 171h92v72h-92z" fill="#e8ebff"/>
+    <path d="M208 171h162v72H208z" fill="#dff5ee"/>
+    <path d="M384 171h106v72H384z" fill="#ffded6"/>
+    <g stroke="#fff" stroke-width="5">
+      <path d="M246 80v77M371 80v77M194 171v72M370 171v72"/>
+    </g>
+  </g>
+  <g fill="#315f9f" opacity=".78">
+    <circle cx="139" cy="115" r="7"/><circle cx="168" cy="116" r="7"/><circle cx="221" cy="114" r="7"/>
+  </g>
+  <g fill="#5c2d91" opacity=".75">
+    <circle cx="291" cy="116" r="7"/><circle cx="322" cy="116" r="7"/><circle cx="348" cy="116" r="7"/>
+  </g>
+  <g fill="#997000" opacity=".7">
+    <circle cx="415" cy="114" r="7"/><circle cx="445" cy="115" r="7"/>
+  </g>
+  <g fill="#28775c" opacity=".78">
+    <circle cx="239" cy="207" r="7"/><circle cx="271" cy="207" r="7"/><circle cx="303" cy="207" r="7"/>
+  </g>
+  <g transform="translate(489 168)">
+    <circle cx="52" cy="51" r="58" fill="#d7ff52"/>
+    <path d="M26 52c15-20 37-20 52 0M33 64c11-13 27-13 38 0M43 76c5-6 13-6 18 0" fill="none" stroke="#203b42" stroke-width="7" stroke-linecap="round"/>
+    <path d="M25 28 80 83" stroke="#203b42" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(61 242)" fill="#a9efd8">
+    <circle cx="21" cy="13" r="13"/>
+    <path d="M2 75c2-33 9-49 19-49s18 16 20 49"/>
+  </g>
+</svg>

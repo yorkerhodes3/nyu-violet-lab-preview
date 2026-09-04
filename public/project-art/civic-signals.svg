@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Civic Signals Studio illustration</title>
+  <desc id="desc">People comparing source cards and discussing a public policy question.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#46133f"/>
+      <stop offset="1" stop-color="#86386d"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#26041f" flood-opacity=".4"/>
+    </filter>
+  </defs>
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <g opacity=".11" fill="#fff">
+    <circle cx="72" cy="64" r="45"/><circle cx="588" cy="280" r="125"/><circle cx="368" cy="21" r="72"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="196" y="40" width="249" height="204" rx="13" fill="#fff"/>
+    <rect x="221" y="65" width="199" height="14" rx="5" fill="#4b1749"/>
+    <rect x="221" y="98" width="90" height="53" rx="6" fill="#f5e9f0"/>
+    <rect x="326" y="98" width="94" height="53" rx="6" fill="#e8eef8"/>
+    <rect x="233" y="112" width="63" height="6" rx="3" fill="#98527d"/>
+    <rect x="233" y="129" width="48" height="5" rx="3" fill="#c9aaba"/>
+    <rect x="338" y="112" width="65" height="6" rx="3" fill="#315f9f"/>
+    <rect x="338" y="129" width="51" height="5" rx="3" fill="#aabbd0"/>
+    <rect x="221" y="170" width="199" height="49" rx="6" fill="#fff5d9"/>
+    <circle cx="246" cy="194" r="11" fill="#ffc857"/>
+    <rect x="270" y="184" width="127" height="6" rx="3" fill="#896c23"/>
+    <rect x="270" y="200" width="89" height="5" rx="3" fill="#c4a868"/>
+  </g>
+  <g>
+    <circle cx="103" cy="182" r="25" fill="#a9efd8"/>
+    <path d="M61 294c5-68 18-99 42-99s38 31 43 99" fill="#a9efd8"/>
+    <circle cx="535" cy="177" r="25" fill="#ffc857"/>
+    <path d="M493 294c5-71 18-104 42-104s38 33 43 104" fill="#ffc857"/>
+  </g>
+  <g fill="#fff">
+    <path d="M40 57h148v71H77l-30 23 8-23H40z" opacity=".94"/>
+    <rect x="61" y="76" width="99" height="7" rx="4" fill="#6d2d59"/>
+    <rect x="61" y="94" width="71" height="6" rx="3" fill="#bd98ad"/>
+    <path d="M463 40h144v67h-12l7 22-29-22H463z" opacity=".94"/>
+    <rect x="484" y="59" width="98" height="7" rx="4" fill="#315f9f"/>
+    <rect x="484" y="77" width="77" height="6" rx="3" fill="#aabbd0"/>
+  </g>
+  <path d="M143 204c25 11 36 29 49 58M496 203c-25 11-36 29-48 58" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="12" stroke-linecap="round"/>
+</svg>

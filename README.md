@@ -1,6 +1,6 @@
 # Violet / Lab
 
-An unofficial, independent design concept for a cross-NYU build weekend. The preview is meant to answer two early questions:
+An unofficial, independent design concept for a two-day cross-NYU hackathon. The preview is meant to answer two early questions:
 
 1. What would participation feel like?
 2. What kinds of projects could someone create, join, or advise?
