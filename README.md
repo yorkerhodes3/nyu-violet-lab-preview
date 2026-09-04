@@ -5,7 +5,8 @@ An unofficial, independent design concept for a cross-NYU build weekend. The pre
 1. What would participation feel like?
 2. What kinds of projects could someone create, join, or advise?
 
-**[Open the live concept preview](https://yorkerhodes3.github.io/nyu-violet-lab-preview/)**
+- **[Open the editorial concept](https://yorkerhodes3.github.io/nyu-violet-lab-preview/)** — an expressive orientation and project-discovery experience
+- **[Open the portal-style concept](https://yorkerhodes3.github.io/nyu-violet-lab-preview/studio/)** — a closer interpretation of the supplied enterprise hackathon layouts
 
 ## Privacy and provenance
 
@@ -32,3 +33,4 @@ Then open `http://localhost:4173`.
 - Save projects locally in the browser
 - Try a short participation matcher
 - Preview project-creator and advisor guidance
+- Compare an editorial concept with a portal-style enterprise concept

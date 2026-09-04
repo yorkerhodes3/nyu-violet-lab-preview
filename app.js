@@ -479,6 +479,8 @@ const challenges = [
   },
 ];
 
+window.VioletLabData = { projects, challenges };
+
 const state = {
   search: "",
   availability: "all",
@@ -916,6 +918,7 @@ function showProjectsForChallenge(challengeId) {
   document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
 }
 
+if (projectGrid) {
 filterToggle.addEventListener("click", () => {
   const open = filterPanel.classList.toggle("is-open");
   filterToggle.setAttribute("aria-expanded", String(open));
@@ -1062,3 +1065,4 @@ updateSavedCount();
 renderProjects();
 renderChallenges();
 setActiveNav();
+}

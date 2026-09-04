@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An unofficial, synthetic portal-style preview of a university-wide NYU hackathon."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="NYU University Hackathon — Portal Concept" />
+    <meta
+      property="og:description"
+      content="See how a cross-NYU hackathon portal could help people discover challenges, projects, teams, and ways to participate."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://yorkerhodes3.github.io/nyu-violet-lab-preview/studio/"
+    />
+    <link rel="icon" href="../public/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./portal.css" />
+    <title>NYU University Hackathon — Portal Concept</title>
+    <script src="../app.js" defer></script>
+    <script src="./portal.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#portal-content">Skip to content</a>
+
+    <div class="concept-strip">
+      <span class="concept-strip__status">
+        <span class="concept-strip__dot" aria-hidden="true"></span>
+        Unofficial concept preview
+      </span>
+      <span class="concept-strip__detail">All projects, people, metrics, and dates are synthetic.</span>
+      <a href="../">View the editorial concept</a>
+    </div>
+
+    <header class="portal-header">
+      <div class="portal-header__identity">
+        <a class="studio-brand" href="#overview" data-route-link="overview" aria-label="Innovation Studio home">
+          <span class="studio-brand__mark" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </span>
+          <strong>Innovation Studio</strong>
+        </a>
+        <span class="header-divider" aria-hidden="true"></span>
+        <span class="event-title">NYU University Hackathon Preview 2027</span>
+        <button class="learn-menu" type="button">
+          Learn more
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+        </button>
+      </div>
+
+      <div class="portal-header__actions">
+        <span class="registered-pill">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-9" /></svg>
+          You’re registered
+        </span>
+        <button class="create-button" type="button">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v14M3 10h14" /></svg>
+          Create
+          <svg class="create-button__chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+        </button>
+        <button class="header-icon" type="button" data-demo-action="help" aria-label="Help">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9.5 9a2.6 2.6 0 1 1 4.1 2.1c-1.2.8-1.6 1.4-1.6 2.4M12 18h.01" />
+          </svg>
+        </button>
+        <button class="header-icon" type="button" data-demo-action="notifications" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 17h12l-1.5-2.2V10a4.5 4.5 0 0 0-9 0v4.8L6 17ZM10 20h4" />
+          </svg>
+        </button>
+        <button class="profile-button" type="button" data-demo-action="profile">
+          <span class="profile-avatar" aria-hidden="true">AR</span>
+          <span class="profile-copy">
+            <strong>Alex Rivera</strong>
+            <small>Fictional profile</small>
+          </span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+        </button>
+        <button
+          class="mobile-nav-button"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="portal-sidebar"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav-backdrop" hidden></div>
+    <aside class="portal-sidebar" id="portal-sidebar" aria-label="Hackathon navigation">
+      <button class="dashboard-link" type="button" data-route="overview">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" />
+        </svg>
+        My Dashboard
+      </button>
+
+      <nav>
+        <section class="nav-section">
+          <button class="nav-section__heading" type="button" aria-expanded="true">
+            Overview
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+          </button>
+          <div class="nav-section__items">
+            <button class="portal-nav-link is-active" type="button" data-route="overview">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6zM15 3v4h4M9 11h6M9 15h6" /></svg>
+              About Page
+            </button>
+            <button class="portal-nav-link" type="button" data-route="participate">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6zM15 3v4h4M9 11h6M9 15h6" /></svg>
+              How to Participate
+            </button>
+            <button class="portal-nav-link" type="button" data-route="guide">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6zM15 3v4h4M9 11h6M9 15h6" /></svg>
+              Meet Nova
+            </button>
+            <button class="portal-nav-link" type="button" data-route="rules">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6zM15 3v4h4M9 11h6M9 15h6" /></svg>
+              Additional Info
+            </button>
+            <button class="portal-nav-link" type="button" data-route="schedule">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM8 3v6M16 3v6M4 10h16" /></svg>
+              Schedule
+            </button>
+          </div>
+        </section>
+
+        <section class="nav-section">
+          <button class="nav-section__heading" type="button" aria-expanded="true">
+            Challenges
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+          </button>
+          <div class="nav-section__items">
+            <button class="portal-nav-link" type="button" data-route="challenges">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v18H7zM10 7h4M10 11h4M10 15h4" /></svg>
+              University Challenges
+            </button>
+            <button class="portal-nav-link" type="button" data-route="topics">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v18H7zM10 7h4M10 11h4M10 15h4" /></svg>
+              Topic Challenges
+            </button>
+          </div>
+        </section>
+
+        <section class="nav-section">
+          <button class="nav-section__heading" type="button" aria-expanded="true">
+            Submissions
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+          </button>
+          <div class="nav-section__items">
+            <button class="portal-nav-link" type="button" data-route="projects">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6zM15 3v4h4M9 11h6M9 15h6" /></svg>
+              Projects
+              <span>12</span>
+            </button>
+            <button class="portal-nav-link" type="button" data-route="ideas">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M8 14c-1.3-1.1-2-2.8-2-4.5a6 6 0 0 1 12 0c0 1.8-.8 3.5-2 4.5-.8.7-1 1.3-1 2H9c0-.7-.2-1.3-1-2Z" /></svg>
+              Ideas
+              <span>8</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="nav-section">
+          <button class="nav-section__heading" type="button" aria-expanded="true">
+            Registrants
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+          </button>
+          <div class="nav-section__items">
+            <button class="portal-nav-link" type="button" data-route="people">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="9" cy="8" r="3" /><path d="M3 19c.6-3.2 2.4-5 6-5s5.4 1.8 6 5M17 6a3 3 0 0 1 0 5M17 14c2.4.2 3.7 1.7 4 4" />
+              </svg>
+              Hackers
+            </button>
+            <button class="portal-nav-link" type="button" data-route="advisors">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="9" cy="8" r="3" /><path d="M3 19c.6-3.2 2.4-5 6-5s5.4 1.8 6 5M17 6a3 3 0 0 1 0 5M17 14c2.4.2 3.7 1.7 4 4" />
+              </svg>
+              Advisors
+            </button>
+          </div>
+        </section>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span>Independent preview</span>
+        <a href="../">Switch concept</a>
+      </div>
+    </aside>
+
+    <main class="portal-main" id="portal-content">
+      <div class="breadcrumb-bar" aria-label="Breadcrumb">
+        <div id="breadcrumbs"></div>
+        <span class="demo-label">Synthetic demonstration</span>
+      </div>
+      <div class="portal-view" id="portal-view" aria-live="polite"></div>
+    </main>
+
+    <dialog class="portal-dialog" id="create-dialog" aria-labelledby="create-dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+      <span class="dialog-eyebrow">Create — preview</span>
+      <h2 id="create-dialog-title">What would you like to start?</h2>
+      <p>This demonstration shows the entry points without creating or sending anything.</p>
+      <div class="create-options">
+        <button type="button" data-create-type="project">
+          <span class="create-options__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" /></svg>
+          </span>
+          <span><strong>New project</strong><small>Bring a weekend-sized problem and invite a team.</small></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+        </button>
+        <button type="button" data-create-type="idea">
+          <span class="create-options__icon create-options__icon--idea">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M8 14c-1.3-1.1-2-2.8-2-4.5a6 6 0 0 1 12 0c0 1.8-.8 3.5-2 4.5-.8.7-1 1.3-1 2H9c0-.7-.2-1.3-1-2Z" /></svg>
+          </span>
+          <span><strong>New idea</strong><small>Share a spark that another team could develop.</small></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+        </button>
+      </div>
+      <p class="dialog-footnote">All actions in this concept are illustrative.</p>
+    </dialog>
+
+    <dialog
+      class="portal-dialog portal-dialog--project"
+      id="project-dialog"
+      aria-labelledby="portal-project-dialog-title"
+    >
+      <button class="dialog-close" type="button" aria-label="Close project details">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+      <div id="project-dialog-content"></div>
+    </dialog>
+
+    <div class="portal-toast" role="status" aria-live="polite">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>
+      <span></span>
+    </div>
+  </body>
+</html>

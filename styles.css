@@ -131,8 +131,23 @@ svg {
 }
 
 .preview-banner__aside {
+  display: flex;
+  align-items: center;
   margin-left: auto;
   color: #d9cce0;
+  gap: 14px;
+}
+
+.preview-banner__aside a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+  text-underline-offset: 2px;
+}
+
+.preview-banner__aside a:hover {
+  text-decoration-color: #fff;
 }
 
 .topbar {
