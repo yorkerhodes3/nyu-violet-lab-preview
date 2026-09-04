@@ -1,0 +1,6 @@
+# The supplied reference material contains internal names and project details.
+# It is intentionally excluded from the public concept repository.
+/assets/
+
+.DS_Store
+Thumbs.db

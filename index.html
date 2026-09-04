@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An unofficial, synthetic preview of a cross-NYU build weekend experience."
+    />
+    <meta name="theme-color" content="#57068c" />
+    <meta property="og:title" content="Violet Lab — Cross-NYU Build Weekend" />
+    <meta
+      property="og:description"
+      content="See what you could build, who you could meet, and how a university-wide hack experience might work."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yorkerhodes3.github.io/nyu-violet-lab-preview/" />
+    <meta
+      property="og:image"
+      content="https://yorkerhodes3.github.io/nyu-violet-lab-preview/public/social-preview.svg"
+    />
+    <title>Violet Lab — Concept Preview</title>
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="preview-banner">
+      <span class="preview-banner__dot" aria-hidden="true"></span>
+      <strong>Concept preview</strong>
+      <span>All projects, people, numbers, and dates are fictional.</span>
+      <span class="preview-banner__aside">Not an official NYU service</span>
+    </div>
+
+    <header class="topbar">
+      <div class="brand-lockup">
+        <a class="brand-mark" href="#overview" aria-label="Violet Lab home">
+          <svg viewBox="0 0 40 40" role="img" aria-hidden="true">
+            <path d="M6 6h12v12H6zM22 6h12v12H22zM6 22h12v12H6z" />
+            <path class="brand-mark__spark" d="M22 22h12v12H22z" />
+          </svg>
+        </a>
+        <div>
+          <p class="brand-name">Violet / Lab</p>
+          <p class="event-name">Cross-NYU Build Weekend</p>
+        </div>
+      </div>
+
+      <div class="topbar__actions">
+        <button class="icon-button saved-projects-button" type="button" aria-label="View saved projects">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.5 4.8A1.8 1.8 0 0 1 8.3 3h7.4a1.8 1.8 0 0 1 1.8 1.8V21L12 17.6 6.5 21V4.8Z" />
+          </svg>
+          <span class="saved-count" aria-hidden="true">0</span>
+        </button>
+        <a class="button button--primary button--compact" href="#projects">
+          Find a project
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+        <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="sidebar">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open navigation</span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+      <nav>
+        <p class="nav-label">Start here</p>
+        <a class="nav-link is-active" href="#overview">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" />
+          </svg>
+          Overview
+        </a>
+        <a class="nav-link" href="#ways-to-join">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="9" cy="8" r="3" />
+            <path d="M3.5 19c.6-3.2 2.4-5 5.5-5s4.9 1.8 5.5 5M17 8v6M14 11h6" />
+          </svg>
+          Ways to participate
+        </a>
+
+        <p class="nav-label nav-label--spaced">Explore</p>
+        <a class="nav-link" href="#projects">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5" />
+          </svg>
+          Demo projects
+          <span class="nav-count">12</span>
+        </a>
+        <a class="nav-link" href="#challenges">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3 4 7v5c0 4.7 3.2 7.7 8 9 4.8-1.3 8-4.3 8-9V7l-8-4Z" />
+            <path d="m9 12 2 2 4-5" />
+          </svg>
+          Challenge areas
+          <span class="nav-count">6</span>
+        </a>
+        <a class="nav-link" href="#journey">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="6" cy="6" r="2" />
+            <circle cx="18" cy="18" r="2" />
+            <path d="M8 6h4a3 3 0 0 1 3 3v6M12 18H8a3 3 0 0 1-3-3V9" />
+          </svg>
+          What to expect
+        </a>
+      </nav>
+
+      <div class="sidebar-card">
+        <span class="eyebrow eyebrow--light">Your starting point</span>
+        <p>Not sure what role fits?</p>
+        <button class="text-button open-matchmaker" type="button">
+          Try the 20-second matcher
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="sidebar-footer">
+        <span>Spring 2027 concept</span>
+        <span aria-hidden="true">•</span>
+        <button class="text-link privacy-button" type="button">About this preview</button>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section class="hero section-anchor" id="overview">
+        <div class="hero__copy">
+          <span class="eyebrow">A weekend for the whole university</span>
+          <h1>Find the people and the problem worth building for.</h1>
+          <p class="hero__lede">
+            Imagine students, faculty, and staff from every NYU school turning shared
+            challenges into working prototypes—in one focused weekend.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projects">
+              Explore demo projects
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+            <button class="button button--secondary open-matchmaker" type="button">
+              Find my way in
+            </button>
+          </div>
+          <dl class="hero__stats" aria-label="Illustrative event statistics">
+            <div>
+              <dt>12</dt>
+              <dd>prototype ideas</dd>
+            </div>
+            <div>
+              <dt>17</dt>
+              <dd>NYU schools represented</dd>
+            </div>
+            <div>
+              <dt>36</dt>
+              <dd>open team roles</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__visual" aria-label="Illustration of a cross-school project team">
+          <div class="orbit orbit--one" aria-hidden="true"></div>
+          <div class="orbit orbit--two" aria-hidden="true"></div>
+          <div class="hero-card hero-card--primary">
+            <div class="hero-card__top">
+              <span class="status-pill">
+                <span></span>
+                Open to join
+              </span>
+              <span class="mini-label">Demo project 04</span>
+            </div>
+            <div class="project-glyph project-glyph--route" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <svg viewBox="0 0 140 80">
+                <path d="M12 57c22-45 45 17 69-20 15-23 31-16 48-22" />
+              </svg>
+            </div>
+            <p class="hero-card__kicker">Belonging, everywhere</p>
+            <h2>First Week,<br />Less Guesswork</h2>
+            <p>A friendly campus guide shaped by the questions new community members actually ask.</p>
+            <div class="hero-card__meta">
+              <div class="avatar-stack" aria-label="Four fictional team members">
+                <span style="--avatar: #ffc857">AR</span>
+                <span style="--avatar: #8be0c6">MJ</span>
+                <span style="--avatar: #9aa8ff">SK</span>
+                <span class="avatar-stack__more">+1</span>
+              </div>
+              <span>3 roles open</span>
+            </div>
+          </div>
+          <div class="floating-note floating-note--top">
+            <span class="floating-note__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m5 12 4 4L19 6" />
+              </svg>
+            </span>
+            <span><strong>No code required</strong>Research, storytelling, and subject expertise count.</span>
+          </div>
+          <div class="floating-note floating-note--bottom">
+            <span class="floating-note__icon floating-note__icon--coral">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v18M3 12h18" />
+              </svg>
+            </span>
+            <span><strong>Cross-school by design</strong>Build beyond your everyday circle.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="orientation section-shell section-anchor" id="ways-to-join">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Choose your entry point</span>
+            <h2>There is more than one way to hack.</h2>
+          </div>
+          <p>
+            Come with a problem, lend a skill, or help a team move forward. You do not
+            need a finished idea—or a technical title—to participate.
+          </p>
+        </div>
+
+        <div class="path-grid">
+          <article class="path-card path-card--create">
+            <span class="path-card__number">01</span>
+            <div class="path-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M16 4v24M4 16h24" />
+              </svg>
+            </div>
+            <h3>Create a project</h3>
+            <p>Bring a campus or community problem and shape a small, testable solution.</p>
+            <ul>
+              <li>A useful problem statement</li>
+              <li>One weekend-sized outcome</li>
+              <li>Roles you want help with</li>
+            </ul>
+            <button class="card-link create-preview-button" type="button">
+              Preview a project brief
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          </article>
+
+          <article class="path-card path-card--join">
+            <span class="path-card__number">02</span>
+            <div class="path-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <circle cx="11" cy="12" r="5" />
+                <circle cx="23" cy="10" r="3" />
+                <path d="M3 28c1-6 3.7-9 8-9s7 3 8 9M20 17c4.6 0 7.3 2.3 8 7" />
+              </svg>
+            </div>
+            <h3>Join a team</h3>
+            <p>Browse open projects by topic, school mix, needed skill, and commitment.</p>
+            <ul>
+              <li>Clear roles and expectations</li>
+              <li>A quick intro, not an application</li>
+              <li>Space for first-time hackers</li>
+            </ul>
+            <a class="card-link" href="#projects">
+              See who is looking
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            </a>
+          </article>
+
+          <article class="path-card path-card--guide">
+            <span class="path-card__number">03</span>
+            <div class="path-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M7 25V11l9-6 9 6v14l-9 4-9-4Z" />
+                <path d="m12 17 3 3 6-7" />
+              </svg>
+            </div>
+            <h3>Guide a team</h3>
+            <p>Offer a reality check, a domain perspective, or a focused working session.</p>
+            <ul>
+              <li>Thirty-minute office hours</li>
+              <li>Technical or domain advising</li>
+              <li>Feedback on demos and impact</li>
+            </ul>
+            <button class="card-link advisor-preview-button" type="button">
+              See advisor examples
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section section-shell section-anchor" id="projects">
+        <div class="section-heading section-heading--projects">
+          <div>
+            <span class="eyebrow">Project finder</span>
+            <h2>What could I create—or join?</h2>
+          </div>
+          <p>
+            These fictional concepts show the range: operational fixes, creative tools,
+            research infrastructure, student experiences, and public-interest prototypes.
+          </p>
+        </div>
+
+        <div class="finder">
+          <div class="search-row">
+            <label class="search-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m16 16 5 5" />
+              </svg>
+              <span class="sr-only">Search demo projects</span>
+              <input
+                id="project-search"
+                type="search"
+                placeholder="Search a topic, school, or skill"
+                autocomplete="off"
+              />
+              <kbd>/</kbd>
+            </label>
+            <button class="button button--secondary filter-toggle" type="button" aria-expanded="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16M7 12h10M10 18h4" />
+              </svg>
+              Filters
+              <span class="filter-count" hidden>0</span>
+            </button>
+          </div>
+
+          <div class="filter-panel" aria-label="Project filters">
+            <fieldset>
+              <legend>I want to</legend>
+              <div class="filter-options" data-filter-group="availability">
+                <button class="filter-chip is-selected" type="button" data-value="all">See everything</button>
+                <button class="filter-chip" type="button" data-value="Open to join">Join a team</button>
+                <button class="filter-chip" type="button" data-value="Needs an advisor">Advise</button>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Time</legend>
+              <div class="filter-options" data-filter-group="commitment">
+                <button class="filter-chip is-selected" type="button" data-value="all">Any</button>
+                <button class="filter-chip" type="button" data-value="Light">A few hours</button>
+                <button class="filter-chip" type="button" data-value="Weekend">Full weekend</button>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Experience</legend>
+              <div class="filter-options" data-filter-group="experience">
+                <button class="filter-chip is-selected" type="button" data-value="all">Any</button>
+                <button class="filter-chip" type="button" data-value="First-timer friendly">First-timer friendly</button>
+                <button class="filter-chip" type="button" data-value="No code needed">No code needed</button>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="quick-filters" aria-label="Quick filters">
+            <span>Try:</span>
+            <button type="button" data-query="accessibility">Accessibility</button>
+            <button type="button" data-query="AI">Responsible AI</button>
+            <button type="button" data-query="arts">Arts + media</button>
+            <button type="button" data-query="climate">Climate</button>
+            <button type="button" data-query="student experience">Student experience</button>
+          </div>
+
+          <div class="results-toolbar">
+            <p><strong id="result-count">12</strong> fictional projects</p>
+            <label>
+              <span>Sort</span>
+              <select id="project-sort">
+                <option value="recommended">Recommended</option>
+                <option value="openings">Most open roles</option>
+                <option value="newest">Newest</option>
+                <option value="alphabetical">A–Z</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="project-grid" id="project-grid" aria-live="polite"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <div class="empty-state__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <circle cx="14" cy="14" r="9" />
+                <path d="m21 21 7 7M10 14h8" />
+              </svg>
+            </div>
+            <h3>No demo projects match those filters.</h3>
+            <p>Try a broader search or clear the selected filters.</p>
+            <button class="button button--secondary clear-filters" type="button">Clear filters</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="challenges-section section-shell section-anchor" id="challenges">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Shared challenge areas</span>
+            <h2>Big enough for NYU. Focused enough for a weekend.</h2>
+          </div>
+          <p>
+            Challenge areas help people find common ground without prescribing the
+            solution. Every project starts with a real person, place, or process in mind.
+          </p>
+        </div>
+        <div class="challenge-grid" id="challenge-grid"></div>
+      </section>
+
+      <section class="journey-section section-shell section-anchor" id="journey">
+        <div class="journey-card">
+          <div class="journey-card__intro">
+            <span class="eyebrow eyebrow--light">What am I getting into?</span>
+            <h2>Four moments. One useful prototype.</h2>
+            <p>
+              The experience is designed to make starting easy, teamwork visible, and
+              outcomes concrete—even if the prototype is a service or process, not an app.
+            </p>
+            <button class="button button--light open-matchmaker" type="button">Find my starting point</button>
+          </div>
+          <ol class="journey-steps">
+            <li>
+              <span class="journey-steps__number">01</span>
+              <div>
+                <span class="journey-steps__time">Before the weekend</span>
+                <h3>Discover</h3>
+                <p>Post a spark, browse open teams, and make a low-pressure introduction.</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-steps__number">02</span>
+              <div>
+                <span class="journey-steps__time">Friday evening</span>
+                <h3>Frame</h3>
+                <p>Meet your team, define the person you are helping, and choose a testable outcome.</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-steps__number">03</span>
+              <div>
+                <span class="journey-steps__time">Saturday</span>
+                <h3>Build + learn</h3>
+                <p>Prototype in short loops with access to makers, mentors, studios, and subject experts.</p>
+              </div>
+            </li>
+            <li>
+              <span class="journey-steps__number">04</span>
+              <div>
+                <span class="journey-steps__time">Sunday afternoon</span>
+                <h3>Share the signal</h3>
+                <p>Show what changed, what you learned, and the next smallest step worth taking.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="principles-section section-shell">
+        <div class="principles-grid">
+          <div>
+            <span class="eyebrow">Built for a university</span>
+            <h2>Different disciplines are the feature.</h2>
+          </div>
+          <div class="principle">
+            <span>01</span>
+            <h3>Problems before platforms</h3>
+            <p>Technology is optional. A better workflow, service, space, or story can be the prototype.</p>
+          </div>
+          <div class="principle">
+            <span>02</span>
+            <h3>Access from the start</h3>
+            <p>Remote participation, clear role descriptions, and accessible outputs are part of the design.</p>
+          </div>
+          <div class="principle">
+            <span>03</span>
+            <h3>Safe, responsible making</h3>
+            <p>Use approved data, protect privacy, document assumptions, and include affected communities.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer__brand">
+          <span class="footer__mark" aria-hidden="true">V/</span>
+          <div>
+            <strong>Violet / Lab</strong>
+            <span>An independent design concept</span>
+          </div>
+        </div>
+        <p>
+          Created to preview a possible cross-NYU hack experience. All project concepts,
+          participation data, names, schedules, and affiliations shown here are synthetic.
+        </p>
+        <button class="text-link privacy-button" type="button">Preview notes</button>
+      </footer>
+    </main>
+
+    <div class="drawer-backdrop" hidden></div>
+    <aside class="project-drawer" aria-hidden="true" aria-labelledby="drawer-title">
+      <button class="drawer-close icon-button" type="button" aria-label="Close project details">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </svg>
+      </button>
+      <div id="drawer-content"></div>
+    </aside>
+
+    <dialog class="modal" id="matchmaker-modal">
+      <button class="modal-close icon-button" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+      <div class="modal__header">
+        <span class="eyebrow">20-second matcher</span>
+        <h2>What sounds most like you?</h2>
+        <p>Choose one from each row. This demo will suggest a way in and a project to explore.</p>
+      </div>
+      <form id="matchmaker-form">
+        <fieldset>
+          <legend><span>1</span>I would most like to…</legend>
+          <div class="choice-grid">
+            <label><input type="radio" name="intent" value="make" checked /><span>Make something tangible</span></label>
+            <label><input type="radio" name="intent" value="understand" /><span>Understand a problem</span></label>
+            <label><input type="radio" name="intent" value="guide" /><span>Help a team decide</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>2</span>I am curious about…</legend>
+          <div class="choice-grid">
+            <label><input type="radio" name="theme" value="people" checked /><span>People + belonging</span></label>
+            <label><input type="radio" name="theme" value="systems" /><span>Systems + operations</span></label>
+            <label><input type="radio" name="theme" value="future" /><span>Technology + the future</span></label>
+          </div>
+        </fieldset>
+        <button class="button button--primary button--full" type="submit">Show my starting point</button>
+      </form>
+      <div class="match-result" id="match-result" hidden></div>
+    </dialog>
+
+    <dialog class="modal modal--brief" id="brief-modal">
+      <button class="modal-close icon-button" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+      <span class="eyebrow">Example project brief</span>
+      <h2>Start small enough to learn.</h2>
+      <div class="brief-example">
+        <div><span>We noticed</span><strong>New community members ask the same wayfinding questions in different places.</strong></div>
+        <div><span>We wonder if</span><strong>A peer-shaped guide could reduce uncertainty during the first two weeks.</strong></div>
+        <div><span>This weekend we will</span><strong>Prototype one route, test it with five people, and document what changes.</strong></div>
+        <div><span>We need</span><strong>A researcher, a service designer, and someone who knows campus operations.</strong></div>
+      </div>
+      <p class="modal-note">Everything above is fictional and intended only to demonstrate the shape of a good brief.</p>
+    </dialog>
+
+    <dialog class="modal modal--brief" id="advisor-modal">
+      <button class="modal-close icon-button" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+      <span class="eyebrow">Ways to guide</span>
+      <h2>Small windows of expertise can unlock a team.</h2>
+      <div class="advisor-list">
+        <div><span>30 min</span><p><strong>Problem check</strong>Help a team separate assumptions from things they know.</p></div>
+        <div><span>45 min</span><p><strong>Practice review</strong>Share what is realistic in a studio, clinic, lab, classroom, or office.</p></div>
+        <div><span>60 min</span><p><strong>Responsible design pass</strong>Pressure-test accessibility, privacy, safety, or community impact.</p></div>
+      </div>
+      <p class="modal-note">Advisor examples and time commitments are illustrative.</p>
+    </dialog>
+
+    <dialog class="modal modal--brief" id="privacy-modal">
+      <button class="modal-close icon-button" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+      </button>
+      <span class="eyebrow">About this preview</span>
+      <h2>Designed to be safely shareable.</h2>
+      <div class="privacy-points">
+        <p><span aria-hidden="true">✓</span> No internal project names, descriptions, or participant identities are used.</p>
+        <p><span aria-hidden="true">✓</span> Every project, person, metric, role, date, and team is synthetic.</p>
+        <p><span aria-hidden="true">✓</span> Public NYU school names provide familiar context; affiliations are illustrative.</p>
+        <p><span aria-hidden="true">✓</span> The visual design is an original concept inspired by common hackathon portal patterns.</p>
+      </div>
+      <p class="modal-note">This independent mockup is not sponsored, reviewed, or endorsed by New York University.</p>
+    </dialog>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>
+      <span></span>
+    </div>
+  </body>
+</html>

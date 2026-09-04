@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#28003f"/>
+      <stop offset="1" stop-color="#6e16a1"/>
+    </linearGradient>
+    <pattern id="p" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#fff" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#p)"/>
+  <rect x="72" y="72" width="60" height="60" rx="8" fill="#fff"/>
+  <path d="M84 84h15v15H84zm21 0h15v15h-15zM84 105h15v15H84z" fill="#57068c"/>
+  <path d="M105 105h15v15h-15z" fill="#d7ff52"/>
+  <text x="155" y="115" fill="#fff" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="2">VIOLET / LAB</text>
+  <text x="72" y="285" fill="#fff" font-family="Arial, sans-serif" font-size="76" font-weight="700">Find the problem</text>
+  <text x="72" y="375" fill="#fff" font-family="Arial, sans-serif" font-size="76" font-weight="700">worth building for.</text>
+  <text x="76" y="448" fill="#dfc9eb" font-family="Arial, sans-serif" font-size="29">An unofficial cross-NYU build weekend concept</text>
+  <rect x="72" y="510" width="258" height="54" rx="27" fill="#d7ff52"/>
+  <text x="105" y="546" fill="#28003f" font-family="Arial, sans-serif" font-size="22" font-weight="700">SYNTHETIC PREVIEW</text>
+  <circle cx="1038" cy="142" r="94" fill="#ff8066"/>
+  <circle cx="1090" cy="275" r="50" fill="#d7ff52"/>
+  <path d="M831 508c49-132 97-80 143-202 39-102 92-92 154-142" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="831" cy="508" r="14" fill="#fff"/>
+  <circle cx="973" cy="307" r="14" fill="#fff"/>
+  <circle cx="1128" cy="164" r="14" fill="#fff"/>
+</svg>
