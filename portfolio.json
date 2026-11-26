@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "nyu-violet-lab-preview",
+  "title": "Violet / Lab",
+  "repo": "yorkerhodes3/nyu-violet-lab-preview",
+  "summary": "An unofficial design concept for a two-day cross-NYU hackathon that previews how students, faculty and staff might find, join or advise projects, using only synthetic content.",
+  "kind": "application",
+  "methodTags": [
+    "collaboration-tools"
+  ],
+  "domainTags": [
+    "education"
+  ],
+  "contribution": {
+    "date": "2026-09-04",
+    "role": "built",
+    "credits": []
+  },
+  "narrative": {
+    "problem": "Planning a two-day cross-NYU hackathon raises two early questions: what would participation feel like, and what kinds of projects could someone create, join or advise? Answering them publicly risks exposing internal project names and participant identities.",
+    "decision": "Builds two dependency-free static concepts, an editorial orientation site and a portal-style interpretation of enterprise hackathon layouts, populated entirely with synthetic projects, people, roles and metrics.",
+    "tradeoff": "Synthetic content keeps internal names and identities private, but the preview cannot show real projects, demand or participation, and saved projects live only in the visitor's browser.",
+    "limitation": "A design concept only: there is no registration, back end or real event data, and the preview has not been sponsored, reviewed or endorsed by NYU.",
+    "caveat": "Unofficial, independent concept preview, not sponsored, reviewed or endorsed by New York University. Every project, challenge, person, role, metric, date and team shown is synthetic."
+  },
+  "evidence": {
+    "level": "working-demo",
+    "links": [
+      {
+        "label": "Latest commit",
+        "url": "https://github.com/yorkerhodes3/nyu-violet-lab-preview/commit/905cdd34ad3ad3176d5d2337e0657c0eb8bc6bb2",
+        "date": "2026-09-04"
+      },
+      {
+        "label": "README",
+        "url": "https://github.com/yorkerhodes3/nyu-violet-lab-preview#readme",
+        "date": "2026-09-04"
+      }
+    ]
+  },
+  "links": {
+    "source": "https://github.com/yorkerhodes3/nyu-violet-lab-preview"
+  },
+  "images": [
+    {
+      "id": "editorial",
+      "src": ".portfolio/editorial.webp",
+      "alt": "Editorial concept home with a Concept preview banner stating all projects, people, numbers and dates are fictional, the headline Find the people and the problem worth building for, and a sample project card.",
+      "caption": "The editorial concept: an orientation and project-discovery experience, labeled as fictional throughout.",
+      "credit": "Screenshot of the Violet / Lab preview site",
+      "source": "screenshot of index.html"
+    },
+    {
+      "id": "portal",
+      "src": ".portfolio/portal.webp",
+      "alt": "Portal-style concept titled NYU University Hackathon Preview 2026, with a sidebar of overview, challenge, submission and registrant pages, a fictional profile, and cards to browse projects, find a challenge or choose a role.",
+      "caption": "The portal-style concept, a closer interpretation of enterprise hackathon layouts, offered for comparison with the editorial version.",
+      "credit": "Screenshot of the Violet / Lab preview site",
+      "source": "screenshot of studio/index.html"
+    },
+    {
+      "id": "data-dignity-art",
+      "src": ".portfolio/data-dignity-art.webp",
+      "alt": "Illustration of a shield with a lime padlock in front of three placeholder profile cards on a purple background.",
+      "caption": "Card artwork for Data Dignity Kit, one of the fictional demo projects visitors can browse and save.",
+      "credit": "Image from the nyu-violet-lab-preview repository",
+      "source": "repository file public/project-art/data-dignity.svg"
+    }
+  ],
+  "defaultImageId": "editorial"
+}
